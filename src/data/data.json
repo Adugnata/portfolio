@@ -1,0 +1,176 @@
+{"bio": "I am a full stack Java developer with 10+ years of experience in software development. I have a Master of Science in Computer Science from Maharishi International University, a Master of Science in Computer Science and Networking from the University of Pisa, and a Bachelor of Science in Computer Science and a Bachelor of Arts in Business Administration and Information Systems from Addis Ababa University. I have experience in Java, Python, C++, JavaScript, HTML5, CSS3, Spring, React, Angular, Django, Restjs, Oracle, MySQL, AWS, and GCP. I have worked as a Software Developer at the Ethiopian Revenues and Customs Authority, the Development Bank of Ethiopia, and NTT DATA, and as a Software Engineer at Walmart Global Tech. I am currently seeking a full-time position as a Software Engineer. I am a hard worker, a team player, and a quick learner. I am passionate about software development and I am always looking to learn new technologies and improve my skills.",
+  "name": "TESFAMICHAEL ADUGNA",
+  "location": "Fairfield, Iowa 52557",
+  "phone": "641.819.2464",
+  "email": "tesfamichael.adugna4@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/tesfamichaeladugna/",
+  "title": "FULL STACK JAVA DEVELOPER",
+  "skills": [
+    "Java",
+    "Python",
+    "C++",
+    "JavaScript",
+    "NestJS",
+    "Spring Boot",
+    "React",
+    "Cosmos DB",
+    "Maria DB",
+    "Oracle",
+    "MySQL",
+    "MongoDB",
+    "Redis",
+    "AWS",
+    "GCP",
+    "Azure",
+    "Kubernetes",
+    "Docker",
+    "Jenkins",
+    "Jira",
+    "SVN",
+    "Git",
+    "Kafka"
+  ],
+  "experience": [
+    {
+      "company": "WALMART GLOBAL TECH",
+      "location": "Arkansas, USA",
+      "position": "Software Engineer",
+      "date": "Jan 2023 to present",
+      "responsibilities": [
+        "Designed and developed scalable microservices.",
+        "Implemented routing using Apache Camel.",
+        "Conducted unit load testing and implemented performance optimizations.",
+        "Integrated microservices with Kafka messaging.",
+        "Automated deployment pipeline for microservices using CI/CD.",
+        "Migrated microservices to JDK 17.",
+        "Fixed code smells and improved test coverage."
+      ],
+      "technologies": [
+        "Kubernetes",
+        "Java",
+        "Spring Boot",
+        "RestJS",
+        "Jenkins",
+        "Jira",
+        "GitHub",
+        "SQL",
+        "Apache Kafka",
+        "Azure",
+        "Splunk",
+        "Graphana",
+        "Kafka stream",
+        "cosmos DB",
+        "maria DB",
+        "Mockito",
+        "JUnit",
+        "Swagger",
+        "Redis",
+        "Terraform"
+      ]
+    },
+    {
+      "company": "NTT DATA",
+      "location": "Pisa, Italy",
+      "position": "Software Development Engineer",
+      "date": "2020-2022",
+      "responsibilities": [
+        "Contributed to backend software development, integration, documentation, testing, and deployment.",
+        "Led development of 2 major projects for leading telecommunications companies.",
+        "Developed clean and efficient code based on requirements and specifications.",
+        "Implemented troubleshooting, testing, and debugging.",
+        "Delivered complex projects on time and according to specifications.",
+        "Upgraded existing software and integrated software components."
+      ],
+      "technologies": [
+        "Google Anthos",
+        "Java",
+        "Kafka",
+        "RedHat",
+        "Oracle Database",
+        "PL/SQL",
+        "Python",
+        "Saga Pattern",
+        "Shell Script",
+        "Spring Boot",
+        "Spring Cloud",
+        "SVN",
+        "Linux"
+      ]
+    },
+    {
+      "company": "DEVELOPMENT BANK OF ETHIOPIA",
+      "location": "Addis Ababa, Ethiopia",
+      "position": "MIS Team Leader",
+      "date": "2016",
+      "responsibilities": [
+        "Increased operational efficiency of bank’s business resources by implementing ERP system.",
+        "Customized ERP based on business logic.",
+        "RESTful APIs, API design, development, testing, documentation, versioning, and integration."
+      ],
+      "technologies": ["Oracle", "Java2EE", "Java", "Python", "Linux"]
+    },
+    {
+      "company": "DEVELOPMENT BANK OF ETHIOPIA",
+      "location": "Addis Ababa, Ethiopia",
+      "position": "Senior Software Developer",
+      "date": "2014-2016",
+      "responsibilities": [
+        "Built key internal and customer-facing systems including core and internet banking systems.",
+        "Performed analysis to define project scope and requirements.",
+        "Led integration of microfinance institutions.",
+        "RESTful APIs, API design, development, testing, documentation, versioning, and integration.",
+        "Maintained and upgraded enterprise systems by identifying and resolving technical errors.",
+        "Implemented data reporting."
+      ],
+      "technologies": ["Java", "Python", "Oracle Database", "Linux"]
+    },
+    {
+      "company": "DEVELOPMENT BANK OF ETHIOPIA",
+      "location": "Addis Ababa, Ethiopia",
+      "position": "Software Developer",
+      "date": "2013",
+      "responsibilities": [
+        "Designed new systems and upgraded existing systems.",
+        "Used Full Stack development for Property Management and Human Resource Management systems.",
+        "Identified and resolved technical issues while upgrading and maintaining existing software."
+      ],
+      "technologies": ["Java", "Python", "JavaScript", "MySQL", "HTML", "CSS", "Linux"]
+    },
+    {
+      "company": "ETHIOPIAN REVENUES AND CUSTOMS AUTHORITY",
+      "location": "Addis Ababa, Ethiopia",
+      "position": "Software Developer",
+      "date": "2009-2013",
+      "responsibilities": [
+        "Analyzed requirements and specifications to efficiently develop and deploy software.",
+        "Implemented C++ and Java-based code.",
+        "Contributed to design of government tax and custom duties revenue collection application system.",
+        "Performed testing to deploy programs and systems.",
+        "Facilitated troubleshooting and debugging."
+      ],
+      "technologies": ["C++", "Java", "Python", "Oracle Database", "Linux"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc in Computer Science",
+      "school": "Maharishi International University",
+      "location": "Fairfield, Iowa, USA"
+    },
+    {
+      "degree": "M.Sc in Computer Science and Networking",
+      "school": "University of Pisa",
+      "location": "Pisa, Italy"
+    },
+    {
+      "degree": "B.Sc in Computer Science",
+      "school": "Addis Ababa University",
+      "location": "Addis Ababa, Ethiopia"
+    },
+    {
+      "degree": "BA in Business Administration and Information System",
+      "school": "Addis Ababa University",
+      "location": "Addis Ababa, Ethiopia"
+    }
+  ]
+}

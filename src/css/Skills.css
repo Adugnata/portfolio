@@ -1,0 +1,36 @@
+/* Skills.css */
+.skills-container {
+    position: relative;
+}
+
+.skill-item {
+    background-color: #f2f2f2;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+    min-width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    animation: moveSkill 5s infinite linear; /* Add a continuous animation */
+}
+
+@keyframes moveSkill {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20px) translateX(20px);
+    }
+    50% {
+        transform: translateY(0) translateX(0);
+    }
+    75% {
+        transform: translateY(20px) translateX(-20px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
