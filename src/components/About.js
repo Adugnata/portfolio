@@ -6,7 +6,7 @@ const About = ({ data }) => {
     let intervalId;
 
     useEffect(() => {
-        const text = `${data.title}\n\n${data.bio}\n\nLocation: ${data.location}\nPhone: ${data.phone}\nEmail: ${data.email}\nLinkedIn: ${data.linkedin}`;
+        const text = `${data.bio}\n\nLocation: ${data.location}\nPhone: ${data.phone}\nEmail: ${data.email}\nLinkedIn: ${data.linkedin}`;
 
         const writeText = () => {
             let index = 0;
