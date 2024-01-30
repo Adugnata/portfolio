@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/ContactForm.css'; // Import your CSS file for ContactForm styling
+import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -44,15 +45,20 @@ const ContactForm = () => {
 
         if (validateForm()) {
             try {
-                const response = await fetch('arn:aws:lambda:us-east-1:730335284440:function:sendEmail', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData),
+                const lambdaClient = new LambdaClient({
+                    region: 'us-east-1',
                 });
 
-                if (response.ok) {
+                const params = {
+                    FunctionName: 'arn:aws:lambda:us-east-1:730335284440:function:sendEmail',
+                    InvocationType: 'RequestResponse',
+                    Payload: JSON.stringify(formData),
+                };
+
+                const command = new InvokeCommand(params);
+                const response = await lambdaClient.send(command);
+
+                if (response.StatusCode === 200) {
                     // Handle successful response
                     console.log('Email sent successfully');
                 } else {
