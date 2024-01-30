@@ -98,104 +98,21 @@
         "SVN",
         "Linux"
       ]
-    },
-    {
-      "company": "DEVELOPMENT BANK OF ETHIOPIA",
-      "location": "Addis Ababa, Ethiopia",
-      "position": "MIS Team Leader",
-      "date": "2016",
-      "responsibilities": [
-        "Increased operational efficiency of bank’s business resources by implementing ERP system.",
-        "Customized ERP based on business logic.",
-        "RESTful APIs, API design, development, testing, documentation, versioning, and integration."
-      ],
-      "technologies": [
-        "Oracle",
-        "Java2EE",
-        "Java",
-        "Python",
-        "Linux"
-      ]
-    },
-    {
-      "company": "DEVELOPMENT BANK OF ETHIOPIA",
-      "location": "Addis Ababa, Ethiopia",
-      "position": "Senior Software Developer",
-      "date": "2014-2016",
-      "responsibilities": [
-        "Built key internal and customer-facing systems including core and internet banking systems.",
-        "Performed analysis to define project scope and requirements.",
-        "Led integration of microfinance institutions.",
-        "RESTful APIs, API design, development, testing, documentation, versioning, and integration.",
-        "Maintained and upgraded enterprise systems by identifying and resolving technical errors.",
-        "Implemented data reporting."
-      ],
-      "technologies": [
-        "Java",
-        "Python",
-        "Oracle Database",
-        "Linux"
-      ]
-    },
-    {
-      "company": "DEVELOPMENT BANK OF ETHIOPIA",
-      "location": "Addis Ababa, Ethiopia",
-      "position": "Software Developer",
-      "date": "2013",
-      "responsibilities": [
-        "Designed new systems and upgraded existing systems.",
-        "Used Full Stack development for Property Management and Human Resource Management systems.",
-        "Identified and resolved technical issues while upgrading and maintaining existing software."
-      ],
-      "technologies": [
-        "Java",
-        "Python",
-        "JavaScript",
-        "MySQL",
-        "HTML",
-        "CSS",
-        "Linux"
-      ]
-    },
-    {
-      "company": "ETHIOPIAN REVENUES AND CUSTOMS AUTHORITY",
-      "location": "Addis Ababa, Ethiopia",
-      "position": "Software Developer",
-      "date": "2009-2013",
-      "responsibilities": [
-        "Analyzed requirements and specifications to efficiently develop and deploy software.",
-        "Implemented C++ and Java-based code.",
-        "Contributed to design of government tax and custom duties revenue collection application system.",
-        "Performed testing to deploy programs and systems.",
-        "Facilitated troubleshooting and debugging."
-      ],
-      "technologies": [
-        "C++",
-        "Java",
-        "Python",
-        "Oracle Database",
-        "Linux"
-      ]
     }
   ],
   "education": [
     {
-      "degree": "M.Sc in Computer Science",
+      "degree": "Computer Science, M.Sc",
       "school": "Maharishi International University",
       "location": "Fairfield, Iowa, USA"
     },
     {
-      "degree": "M.Sc in Computer Science and Networking",
+      "degree": "Computer Science and Networking, M.Sc",
       "school": "University of Pisa",
       "location": "Pisa, Italy"
     },
     {
-      "degree": "B.Sc in Computer Science",
-      "school": "Addis Ababa University",
-      "location": "Addis Ababa, Ethiopia"
-    },
-    {
-      "degree": "BA in Business Administration and Information System",
+      "degree": "Computer Science, B.Sc",
       "school": "Addis Ababa University",
       "location": "Addis Ababa, Ethiopia"
     }

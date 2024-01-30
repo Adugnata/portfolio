@@ -1,9 +1,7 @@
-// ContactForm.js
-
 import React, { useState } from 'react';
 import '../css/ContactForm.css'; // Import your CSS file for ContactForm styling
 
-const ContactForm = ({ onSubmit }) => {
+const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -41,11 +39,30 @@ const ContactForm = ({ onSubmit }) => {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
 
         if (validateForm()) {
-            onSubmit(formData);
+            try {
+                const response = await fetch('arn:aws:lambda:us-east-1:730335284440:function:sendEmail', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                if (response.ok) {
+                    // Handle successful response
+                    console.log('Email sent successfully');
+                } else {
+                    // Handle error response
+                    console.error('Error sending email');
+                }
+            } catch (error) {
+                console.error('Error sending email:', error);
+            }
+
             setFormData({
                 name: '',
                 email: '',
