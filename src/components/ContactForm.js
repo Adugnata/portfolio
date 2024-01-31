@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../css/ContactForm.css'; // Import your CSS file for ContactForm styling
-import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda";
+import '../css/ContactForm.css';
+import axios from 'axios';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -45,20 +45,13 @@ const ContactForm = () => {
 
         if (validateForm()) {
             try {
-                const lambdaClient = new LambdaClient({
-                    region: 'us-east-1',
-                });
-
-                const params = {
-                    FunctionName: 'arn:aws:lambda:us-east-1:730335284440:function:sendEmail',
-                    InvocationType: 'RequestResponse',
-                    Payload: JSON.stringify(formData),
-                };
-
-                const command = new InvokeCommand(params);
-                const response = await lambdaClient.send(command);
-
-                if (response.StatusCode === 200) {
+                // Replace 'YOUR_API_GATEWAY_ENDPOINT' with the actual URL of your API Gateway endpoint
+                const response = await axios.post(
+                    'https://izhhs24rz8.execute-api.us-east-1.amazonaws.com/v1',
+                    formData
+                );
+                console.log('Response:', response);
+                if (response.status === 200) {
                     // Handle successful response
                     console.log('Email sent successfully');
                 } else {
