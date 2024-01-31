@@ -6,15 +6,15 @@ const About = ({ data }) => {
     let intervalId;
 
     useEffect(() => {
-        const text = `${data.bio}\n\nLocation: ${data.location}\nPhone: ${data.phone}\nEmail: ${data.email}\nLinkedIn: ${data.linkedin}`;
+        const text = `${data.bio}\n\nEmail: ${data.email}\n\nLinkedIn: ${data.linkedin}\n\nGitHub: ${data.github}`;
 
         const writeText = () => {
             let index = 0;
             intervalId = setInterval(() => {
-                setAnimatedText((prevText) => prevText + text[index]);
-                index++;
-
-                if (index === text.length) {
+                if (index < text.length-1) {
+                    setAnimatedText((prevText) => prevText + text[index]);
+                    index++;
+                } else {
                     clearInterval(intervalId);
                 }
             }, 50); // Adjust the interval for the speed of animation

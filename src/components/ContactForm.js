@@ -10,6 +10,7 @@ const ContactForm = () => {
     });
 
     const [errors, setErrors] = useState({});
+    const [submitStatus, setSubmitStatus] = useState('');
 
     const handleInputChange = (e) => {
         setFormData({
@@ -21,7 +22,6 @@ const ContactForm = () => {
     const validateForm = () => {
         const newErrors = {};
 
-        // Simple validation example (add more as needed)
         if (!formData.name.trim()) {
             newErrors.name = 'Name is required';
         }
@@ -45,33 +45,35 @@ const ContactForm = () => {
 
         if (validateForm()) {
             try {
-                // Replace 'YOUR_API_GATEWAY_ENDPOINT' with the actual URL of your API Gateway endpoint
                 const response = await axios.post(
                     'https://izhhs24rz8.execute-api.us-east-1.amazonaws.com/v1',
-                    formData
+                    JSON.stringify(formData),
+                    {
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    }
                 );
+
                 console.log('Response:', response);
+
                 if (response.status === 200) {
-                    // Handle successful response
-                    console.log('Email sent successfully');
+                    setSubmitStatus('success');
                 } else {
-                    // Handle error response
-                    console.error('Error sending email');
+                    setSubmitStatus('failure');
                 }
             } catch (error) {
-                console.error('Error sending email:', error);
+                console.error('Error sending email:', error.response || error);
+                setSubmitStatus('failure');
             }
-
-            setFormData({
-                name: '',
-                email: '',
-                message: ''
-            });
         }
     };
 
     return (
         <form className="contact-form" onSubmit={handleFormSubmit}>
+            {submitStatus === 'success' && <p className="success">Email sent successfully!</p>}
+            {submitStatus === 'failure' && <p className="error">Error sending email. Please try again.</p>}
+
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} required />
             {errors.name && <p className="error">{errors.name}</p>}

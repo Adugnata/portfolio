@@ -1,11 +1,11 @@
 {
-  "bio": "I\\'m a full stack Java developer with 10+ years of experience in software development. I have a Master of Science in Computer Science from Maharishi International University, a Master of Science in Computer Science and Networking from the University of Pisa, and a Bachelor of Science in Computer Science and a Bachelor of Arts in Business Administration and Information Systems from Addis Ababa University. I have experience in Java, Python, C++, JavaScript, HTML5, CSS3, Spring, React, Angular, Django, Restjs, Oracle, MySQL, AWS, and GCP. I have worked as a Software Developer at the Ethiopian Revenues and Customs Authority, the Development Bank of Ethiopia, and NTT DATA, and as a Software Engineer at Walmart Global Tech. I am currently seeking a full-time position as a Software Engineer. I am a hard worker, a team player, and a quick learner. I am passionate about software development and I am always looking to learn new technologies and improve my skills.",
-  "name": "TESFAMICHAEL ADUGNA",
+  "bio": "I\\'m a Software Engineer with over a decade of experience in the field. My academic background includes two Master of Science degrees in Computer Science, one from Maharishi International University and the other in Computer Science and Networking from the University of Pisa, along with a Bachelor of Science in Computer Science and a Bachelor of Arts in Business Administration and Information Systems from Addis Ababa University. My technical expertise spans a wide range of technologies, including Java, Python, C++, JavaScript, HTML5, CSS3, Spring, React, Angular, Django, Nestjs, Oracle, MySQL, AWS, and GCP. Professionally, I have contributed to the Ethiopian Revenues and Customs Authority, the Development Bank of Ethiopia, and NTT DATA. Presently, I am employed as a Software Engineer at Kitestring Technical Service, providing services to their client, Walmart Global Tech. I am known for my dedication, teamwork, and rapid learning abilities. My passion lies in software development, and I am constantly seeking opportunities to enhance my skills and knowledge in new technologies.",
+  "name": "Tesfamichael Adugna",
   "location": "Fairfield, Iowa 52557",
-  "phone": "641.819.2464",
   "email": "tesfamichael.adugna4@gmail.com",
   "linkedin": "https://www.linkedin.com/in/tesfamichaeladugna/",
-  "title": "FULL STACK JAVA DEVELOPER",
+  "github": "https://github.com/adugnata",
+  "title": "Software Engineer",
   "skills": [
     "Java",
     "Python",
@@ -116,5 +116,34 @@
       "school": "Addis Ababa University",
       "location": "Addis Ababa, Ethiopia"
     }
-  ]
+  ],
+  "blog": {
+    "title": "A Journey Through AWS and Modern Web Development",
+    "sections": [
+      {
+        "subtitle": "",
+        "content": "Welcome to the inaugural post of my personal blog! Today, I'm excited to share the behind-the-scenes of how this blog came to life, highlighting my journey through the world of AWS services and modern web development technologies."
+      },
+      {
+        "subtitle": "The Starting Point: Domain Acquisition with Route 53",
+        "content": "My journey began with the acquisition of a domain name through Amazon Route 53. Route 53 is not just a domain registrar; it's also a robust DNS service. This made it an ideal choice for managing the domain and ensuring that it reliably points to the hosted content."
+      },
+      {
+        "subtitle": "Building a Scalable, Secure Infrastructure",
+        "content": "To ensure fast and secure delivery of my blog's content, I utilized Amazon CloudFront. This content delivery network (CDN) service seamlessly integrates with other AWS services, providing low latency and high data transfer speeds for my blog. Security is paramount, especially when running a website accessible to the public. That's where AWS Certificate Manager comes in. By creating a free SSL/TLS certificate, I was able to establish a secure, encrypted connection for my blog, reassuring visitors of their privacy and security. Amazon S3 (Simple Storage Service) serves as the backbone for hosting my static website. Known for its durability, scalability, and performance, S3 made it straightforward to store and retrieve any amount of data, at any time."
+      },
+      {
+        "subtitle": "The Tech Stack: React, CSS, and HTML",
+        "content": "For the front-end development, I chose the React framework for its efficiency and flexibility in building interactive UIs. React, combined with traditional HTML and CSS, allowed me to create a visually appealing and responsive design that aligns with modern web standards."
+      },
+      {
+        "subtitle": "Interactive Contact Form: API Gateway, Lambda, and SES",
+        "content": "A key feature of my blog is the 'Contact Me' form, enabling visitors to reach out directly. This was implemented using a combination of AWS services: API Gateway handles the HTTP requests from the contact form, acting as a gatekeeper that ensures secure and controlled access to backend services. Upon form submission, AWS Lambda is triggered. This serverless compute service runs the backend code, processing the form data without the need for provisioning or managing servers. Finally, the processed data is forwarded to my email address using Amazon SES. This scalable email service ensures that I receive visitor messages reliably."
+      },
+      {
+        "subtitle": "Conclusion",
+        "content": "Building this blog has been an enriching experience, allowing me to delve deep into AWS services and modern web development practices. Each AWS service played a critical role in the blog's infrastructure, providing scalability, security, and efficiency. Coupled with the power of React, CSS, and HTML, I was able to craft a dynamic and responsive blog that I'm proud to share with the world. Stay tuned for more posts where I'll dive deeper into each component of this setup, sharing insights and tips for aspiring web developers and AWS enthusiasts!"
+      }
+    ]
+  }
 }
