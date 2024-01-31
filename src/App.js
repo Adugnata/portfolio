@@ -28,7 +28,7 @@ function App() {
             <div>
                 <Header name={data.name}/>
                 <Routes>
-                    <Route path="/" element={<Blog blogData={data.blog}/>}/>
+                    <Route path="/" element={<About data={data}/>}/>
                     <Route path="/about" element={<About data={data}/>}/>
                     <Route path="/skills" element={<Skills skills={data.skills}/>}/>
                     <Route path="/experience" element={<Experience experience={data.experience}/>}/>
