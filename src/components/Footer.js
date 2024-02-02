@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <footer style={{ position: 'fixed', bottom: 0, width: '100%', textAlign: 'center', backgroundColor: '#f8f8f8', padding: '10px' }}>
-            <p>&copy; {currentYear} portfolio. All rights reserved.</p>
+            <p>&copy; {currentYear} Tesfamichael Adugna. All rights reserved.</p>
         </footer>
     );
 };
