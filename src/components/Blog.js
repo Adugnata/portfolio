@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Blog.css';
 import architectureImage from '../image/architecture.png';
 function Blog({ blogData: blog }) {
     return (
