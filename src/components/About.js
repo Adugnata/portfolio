@@ -1,35 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import '../css/About.css'; // Import the CSS file
+import React, { useEffect, useRef, useState } from 'react';
+import '../css/About.css';
 
 const About = ({ data }) => {
     const [animatedText, setAnimatedText] = useState('');
-    let intervalId;
+    const intervalRef = useRef(null);
 
     useEffect(() => {
-        const text = `${data.bio}\n\nLinkedIn: ${data.linkedin}\n\n`;
+        if (!data) return;
 
-        const writeText = () => {
-            let index = 0;
-            intervalId = setInterval(() => {
-                if (index < text.length-1) {
-                    setAnimatedText((prevText) => prevText + text[index]);
-                    index++;
-                } else {
-                    clearInterval(intervalId);
+        // Remove the LinkedIn URL from the animated text
+        const fullText = `${data.bio}\n\nLinkedIn: `;
+        let index = 0;
+
+        const animate = () => {
+            intervalRef.current = setInterval(() => {
+                index++;
+                setAnimatedText(fullText.slice(0, index));
+                if (index >= fullText.length) {
+                    clearInterval(intervalRef.current);
                 }
-            }, 50); // Adjust the interval for the speed of animation
+            }, 50);
         };
 
-        writeText();
+        animate();
 
-        // Clean up the interval on component unmount
-        return () => clearInterval(intervalId);
+        return () => {
+            clearInterval(intervalRef.current);
+        };
     }, [data]);
 
     return (
         <section id="about-section">
             <h2>About</h2>
-            <p id="about-text">{animatedText}</p>
+            <p id="about-text">
+                {animatedText}
+                {/* Show LinkedIn link after animation is complete */}
+                {animatedText.endsWith('LinkedIn: ') && (
+                    <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
+                        {data.linkedin}
+                    </a>
+                )}
+            </p>
         </section>
     );
 };

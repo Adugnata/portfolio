@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = ({ experience }) => (
     <section>
-        <h2>Experience</h2>
+        <h2>Recent Experience</h2>
         {experience.map((job, index) => (
             <div key={index}>
                 <h3>{job.position}</h3>
